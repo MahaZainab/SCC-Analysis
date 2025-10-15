@@ -1,0 +1,401 @@
+[
+  {
+    "id": "q1",
+    "code": "def Make Suite From Dict d label None suite Suite label label suite Set Dict d suite Normalize return suite",
+    "question": "What does the code make ?",
+    "reference": "a suite",
+    "prediction": "Test Suite",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q2",
+    "code": "def Make Suite From Dict d label None suite Suite label label suite Set Dict d suite Normalize return suite",
+    "question": "Does the code make a suite ?",
+    "reference": "Yes",
+    "prediction": "Yes",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q3",
+    "code": "def receive message topic name subscription name pubsub client pubsub Client topic pubsub client topic topic name subscription topic subscription subscription name results subscription pull return immediately True print ' Received{}messages ' format len results for ack id message in results print '*{} {} {}' format message message id message data message attributes if results subscription acknowledge [ack id for ack id message in results]",
+    "question": "Does the code receive a message from a pull subscription ?",
+    "reference": "Yes",
+    "prediction": "Yes, it receives messages from a pull subscription.",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q4",
+    "code": "def receive message topic name subscription name pubsub client pubsub Client topic pubsub client topic topic name subscription topic subscription subscription name results subscription pull return immediately True print ' Received{}messages ' format len results for ack id message in results print '*{} {} {}' format message message id message data message attributes if results subscription acknowledge [ack id for ack id message in results]",
+    "question": "What does the code receive from a pull subscription ?",
+    "reference": "a message",
+    "prediction": "Yes, messages",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q5",
+    "code": "def Create Shared Budget client budget service client Get Service ' Budget Service' version 'v 201609 ' budget {'name' ' Shared Interplanetary Budget#%s' % uuid uuid 4 'amount' {'micro Amount' '2000000 '} 'delivery Method' 'STANDARD' 'is Explicitly Shared' 'true'}operation {'operator' 'ADD' 'operand' budget}response budget service mutate [operation] return response['value'][ 0 ]",
+    "question": "What be an explicit budget used only ?",
+    "reference": "to create the campaign",
+    "prediction": "Explicit Budget",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q6",
+    "code": "def Create Shared Budget client budget service client Get Service ' Budget Service' version 'v 201609 ' budget {'name' ' Shared Interplanetary Budget#%s' % uuid uuid 4 'amount' {'micro Amount' '2000000 '} 'delivery Method' 'STANDARD' 'is Explicitly Shared' 'true'}operation {'operator' 'ADD' 'operand' budget}response budget service mutate [operation] return response['value'][ 0 ]",
+    "question": "Be an explicit budget used to create the campaign only ?",
+    "reference": "Yes",
+    "prediction": "Yes",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q7",
+    "code": "def Create Shared Budget client budget service client Get Service ' Budget Service' version 'v 201609 ' budget {'name' ' Shared Interplanetary Budget#%s' % uuid uuid 4 'amount' {'micro Amount' '2000000 '} 'delivery Method' 'STANDARD' 'is Explicitly Shared' 'true'}operation {'operator' 'ADD' 'operand' budget}response budget service mutate [operation] return response['value'][ 0 ]",
+    "question": "What be used to create the campaign only ?",
+    "reference": "an explicit budget",
+    "prediction": "Explicit Budget",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q8",
+    "code": "def get Plugins Directory Path return archive get Absolute Frozen Folder Path file 'xml plugins'",
+    "question": "What does the code get ?",
+    "reference": "the plugins directory path",
+    "prediction": "\nPlugins Directory Path",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q9",
+    "code": "def get Plugins Directory Path return archive get Absolute Frozen Folder Path file 'xml plugins'",
+    "question": "Does the code get the plugins directory path ?",
+    "reference": "Yes",
+    "prediction": "Yes, it does.",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q10",
+    "code": "def ffmpeg write image filename image logfile False if image dtype 'uint 8 ' image image astype 'uint 8 ' cmd [get setting 'FFMPEG BINARY' '-y' '-s' '%dx%d' % image shape[ 2][ -1 ] '-f' 'rawvideo' '-pix fmt' 'rgba' if image shape[ 2 ] 4 else 'rgb 24 ' '-i' '-' filename]if logfile log file open filename + ' log' 'w+' else log file sp PIP Epopen params {'stdout' DEVNULL 'stderr' log file 'stdin' sp PIPE}if os name 'nt' popen params['creationflags'] 134217728 proc sp Popen cmd **popen params out err proc communicate image tostring if proc returncode err '\\n' join [ '[ Movie Py] Running %s\\n' % cmd 'WARNING thiscommandreturnedanerror ' err decode 'utf 8 ' ] raise IO Error err del proc",
+    "question": "What does the code write to a file ?",
+    "reference": "an image",
+    "prediction": "Yes, it writes an image file.",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q11",
+    "code": "def ffmpeg write image filename image logfile False if image dtype 'uint 8 ' image image astype 'uint 8 ' cmd [get setting 'FFMPEG BINARY' '-y' '-s' '%dx%d' % image shape[ 2][ -1 ] '-f' 'rawvideo' '-pix fmt' 'rgba' if image shape[ 2 ] 4 else 'rgb 24 ' '-i' '-' filename]if logfile log file open filename + ' log' 'w+' else log file sp PIP Epopen params {'stdout' DEVNULL 'stderr' log file 'stdin' sp PIPE}if os name 'nt' popen params['creationflags'] 134217728 proc sp Popen cmd **popen params out err proc communicate image tostring if proc returncode err '\\n' join [ '[ Movie Py] Running %s\\n' % cmd 'WARNING thiscommandreturnedanerror ' err decode 'utf 8 ' ] raise IO Error err del proc",
+    "question": "Does the code write an image to a file ?",
+    "reference": "Yes",
+    "prediction": "Yes, it writes an image file",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q12",
+    "code": "def url add parameters url params if params fragments list urlparse url value parse qs fragments[ 4 ] value update params fragments[ 4 ] urlencode value url urlunparse fragments return url",
+    "question": "What does the code add ?",
+    "reference": "parameters to url",
+    "prediction": "Parameters",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q13",
+    "code": "def url add parameters url params if params fragments list urlparse url value parse qs fragments[ 4 ] value update params fragments[ 4 ] urlencode value url urlunparse fragments return url",
+    "question": "Does the code add parameters to url ?",
+    "reference": "Yes",
+    "prediction": "Yes, it adds parameters",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q14",
+    "code": "def read sheets archive xml source archive read ARC WORKBOOK tree fromstring xml source for element in safe iterator tree '{%s}sheet' % SHEET MAIN NS attrib element attribattrib['id'] attrib[ '{%s}id' % REL NS ]del attrib[ '{%s}id' % REL NS ]if attrib['id'] yield attrib",
+    "question": "For what purpose do worksheet titles and ids read ?",
+    "reference": "for a workbook",
+    "prediction": "Reads worksheet titles and ids for a workbook.",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q15",
+    "code": "def get token profile token os environ get 'VAULT TOKEN' profile get 'vault token' if token is None raise Command Execution Error ' Atokenwasnotconfigured' return token",
+    "question": "Does the code raise an error if it ca nt be found ?",
+    "reference": "Yes",
+    "prediction": "Yes",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q16",
+    "code": "def get token profile token os environ get 'VAULT TOKEN' profile get 'vault token' if token is None raise Command Execution Error ' Atokenwasnotconfigured' return token",
+    "question": "What does the code raise if it ca nt be found ?",
+    "reference": "an error",
+    "prediction": "Command Execution Error",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q17",
+    "code": "def get token profile token os environ get 'VAULT TOKEN' profile get 'vault token' if token is None raise Command Execution Error ' Atokenwasnotconfigured' return token",
+    "question": "Does the code get a token if it ca nt be found ?",
+    "reference": "Yes",
+    "prediction": "Yes, it can't find a token.",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  },
+  {
+    "id": "q18",
+    "code": "def get token profile token os environ get 'VAULT TOKEN' profile get 'vault token' if token is None raise Command Execution Error ' Atokenwasnotconfigured' return token",
+    "question": "What does the code get if it ca nt be found ?",
+    "reference": "a token",
+    "prediction": "\nToken was not configured",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 3
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 1
+    }
+  },
+  {
+    "id": "q19",
+    "code": "def is windows return sys platform startswith u'win'",
+    "question": "Are we using windows when ?",
+    "reference": "Yes",
+    "prediction": "  Windows",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q20",
+    "code": "def is windows return sys platform startswith u'win'",
+    "question": "What are we using when ?",
+    "reference": "windows",
+    "prediction": "\nYes (windows)",
+    "accuracy": {
+      "score": 2
+    },
+    "completeness": {
+      "score": 1
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 2
+    }
+  },
+  {
+    "id": "q21",
+    "code": "def empty urlconf request t Template EMPTY URLCONF TEMPLATE name ' Empty URL Conftemplate' c Context {'project name' settings SETTINGS MODULE split ' ' [0 ]} return Http Response Not Found t render c mimetype 'text/html'",
+    "question": "What does the code create ?",
+    "reference": "an empty urlconf 404 error response",
+    "prediction": "Empty URL conf 404 response",
+    "accuracy": {
+      "score": 3
+    },
+    "completeness": {
+      "score": 2
+    },
+    "relevance": {
+      "score": 3
+    },
+    "clarity": {
+      "score": 3
+    }
+  }
+]
